@@ -1,0 +1,19 @@
+.AboutBanner__fig {
+    height: 300px;
+    margin-inline: 5%;
+    margin-block: 45px;
+
+    @media screen and (max-width: 768px) {
+        height: 250px;
+        margin-inline: 15px;
+        margin-block: 20px;
+    }
+}
+
+.banner__Wrapper__fig__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    border-radius: 10px;
+}

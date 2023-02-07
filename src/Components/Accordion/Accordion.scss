@@ -1,0 +1,88 @@
+.location__info__details[open] summary .fa-chevron-down {
+    transform: rotate(-180deg);
+}
+
+.location__wrapper {
+    display: flex;
+    gap: 80px;
+    margin-top: 20px;
+    margin-inline: 5%;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 10px;
+        margin-inline: 15px;
+        display: block;
+    }
+
+    #location__wrapper__info {
+        width: 100%;
+
+        @media screen and (max-width: 768px) {
+            width: unset;
+            margin-bottom: 20px;
+        }
+
+        .location__info__details {
+            user-select: none;
+            width: 100%;
+
+            @media screen and (max-width: 768px) {
+            }
+
+            .location__info__title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 20px;
+                color: #FFFFFF;
+                background-color: #FF6060;
+                border-radius: 10px;
+                list-style: none;
+                cursor: pointer;
+                padding: 20px;
+                transform: translate(-0%, 20%);
+
+                @media screen and (max-width: 768px) {
+                    border-radius: 5px;
+                    font-size: 13px;
+                    padding: 1% 2%;
+                }
+
+                .fa-chevron-down {
+                    transition: all 0.5s;
+                }
+            }
+
+            p,
+            ul {
+                background-color: #F7F7F7;
+                border-radius: 10px;
+                padding-block: 6%;
+                padding-inline: 3%;
+                height: 250px;
+
+                @media screen and (max-width: 768px) {
+                    height: unset;
+                    border-radius: 5px;
+                }
+            }
+
+            p,
+            li {
+                font-weight: 400;
+                font-size: 18px;
+                color: #FF6060;
+                margin-bottom: 5px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                }
+            }
+
+            ul {
+                list-style: none;
+            }
+        }
+    }
+}
